@@ -1,0 +1,7 @@
+In Java 6, the process of reading from a file involves the following steps:
+Creating a Buffer to store the read content.
+Creating a Reader (stream) to read from the file.
+Reading each line of the file separately.
+Storing the results in a variable.
+Handling potential exceptions that may occur from the Reader class and the Buffer.
+Closing the stream in case of errors and ensuring the proper termination of the application.
