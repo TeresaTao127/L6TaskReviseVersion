@@ -1,0 +1,2 @@
+Operations on files are often referred to as input/output (I/O) operations.
+This is because they are considered operations of reading (input) and writing (output).
