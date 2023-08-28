@@ -1,0 +1,1 @@
+In simple terms, a file is a structured data collection with a specific length. It has a name and a path that indicates its location on a storage device.
