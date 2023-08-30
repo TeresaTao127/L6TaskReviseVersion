@@ -6,14 +6,15 @@ import java.io.IOException;
 
 public class WordCheckInFile {
     public static void main(String[] args) {
-        checkWordInFile( "src\\main\\resources\\CheckWordInFile.txt");
+        checkWordInFile("src\\main\\resources\\CheckWordInFile.txt", "reads");
+        checkWordInFile("src\\main\\resources\\CheckWordInFile.txt", "cats");
     }
-    public static void checkWordInFile(String filePath) {
-        String checkWord = "reads";
+
+    public static boolean checkWordInFile(String filePath, String checkWord) {
+
+        boolean containsWord = false;
         try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
             String line;
-            boolean containsWord = false;
-
             while ((line = reader.readLine()) != null) {
                 if (line.contains(checkWord)) {
                     containsWord = true;
@@ -28,5 +29,6 @@ public class WordCheckInFile {
         } catch (IOException e) {
             System.out.println("problem with reading a file!!");
         }
+        return containsWord;
     }
 }
