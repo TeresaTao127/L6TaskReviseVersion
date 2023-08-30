@@ -14,7 +14,7 @@ public class SquareRoot {
         try {
             System.out.println("Square root of:" + number + " is " + result);
         } catch (IllegalArgumentException e) {
-            System.out.println("Error: " + e.getMessage());
+            System.err.println("Error: " + e.getMessage());
         }
     }
 

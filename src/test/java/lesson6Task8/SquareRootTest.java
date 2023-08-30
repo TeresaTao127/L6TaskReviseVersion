@@ -9,10 +9,15 @@ class SquareRootTest {
 
     @Test
     void shouldTestSquareRoot() {
-        SquareRoot squareRoot=new SquareRoot(49);
         double expectedResult=7;
         double result=SquareRoot.getSquareRoot(49);
         Assertions.assertEquals(expectedResult,result);
+    }
+    @Test
+    void shouldTestExceptionThrow() {
+        double number = -1;
+        double result1 = SquareRoot.getSquareRoot(number);
+        Assertions.assertEquals("Input value cannot be negative!!", result1);
 
     }
 }
