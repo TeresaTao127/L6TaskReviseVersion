@@ -16,8 +16,6 @@ class SquareRootTest {
     @Test
     void shouldTestExceptionThrow() {
         double number = -1;
-        double result1 = SquareRoot.getSquareRoot(number);
-        Assertions.assertEquals("Input value cannot be negative!!", result1);
-
+        assertThrows(IllegalArgumentException.class, () -> SquareRoot.getSquareRoot(number));
     }
 }
