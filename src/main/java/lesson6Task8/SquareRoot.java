@@ -9,9 +9,9 @@ public class SquareRoot {
     }
 
     public static void main(String[] args) {
-        double number = 25;
-        double result = SquareRoot.getSquareRoot(number);
+        double number = -1;
         try {
+            double result = SquareRoot.getSquareRoot(number);
             System.out.println("Square root of:" + number + " is " + result);
         } catch (IllegalArgumentException e) {
             System.err.println("Error: " + e.getMessage());
